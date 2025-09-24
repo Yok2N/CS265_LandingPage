@@ -6,96 +6,70 @@
     <title>Group 3 Documentation</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
         body {
             font-family: 'Poppins', sans-serif;
-            min-height: 100vh;
-            display: flex;
-            flex-direction: column;
-            background: linear-gradient(-45deg, #1e3c72, #2a5298, #6a11cb, #2575fc);
-            background-size: 400% 400%;
-            animation: gradientBG 12s ease infinite;
-            color: #fff;
+            margin: 0;
+            padding: 0;
+            background: #f7f9fc;
+            color: #333;
         }
 
-        @keyframes gradientBG {
-            0% { background-position: 0% 50%; }
-            50% { background-position: 100% 50%; }
-            100% { background-position: 0% 50%; }
-        }
         header {
             text-align: center;
-            padding: 3rem 1rem 1rem;
-        }
-        header h1 {
-            font-size: 2.5rem;
-            font-weight: 600;
-            color: #fff;
-            text-shadow: 0 2px 10px rgba(0,0,0,0.3);
-            animation: fadeInDown 1s ease;
+            padding: 2rem 1rem 1rem;
         }
 
-        @keyframes fadeInDown {
-            from { opacity: 0; transform: translateY(-20px); }
-            to { opacity: 1; transform: translateY(0); }
+        header h1 {
+            font-size: 2rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            color: #4a4a4a;
         }
 
         .faq {
             margin: 2rem auto;
             padding: 2rem;
             width: 90%;
-            max-width: 700px;
-            background: rgba(255, 255, 255, 0.15);
+            max-width: 600px;
+            background: #ffffff;
             border-radius: 20px;
-            backdrop-filter: blur(10px);
-            -webkit-backdrop-filter: blur(10px);
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
             text-align: center;
-            animation: fadeInUp 1s ease;
-        }
-
-        @keyframes fadeInUp {
-            from { opacity: 0; transform: translateY(20px); }
-            to { opacity: 1; transform: translateY(0); }
         }
 
         .faq h2 {
-            margin-bottom: 1.5rem;
-            font-size: 1.8rem;
+            font-size: 1.5rem;
+            margin-bottom: 1.2rem;
             font-weight: 600;
-            color: #fff;
+            color: #555;
         }
 
         .faq ul {
             list-style: none;
+            padding: 0;
         }
 
         .faq li {
-            margin: 1rem 0;
+            margin: 0.8rem 0;
         }
 
         .faq a {
             display: inline-block;
             text-decoration: none;
             color: #fff;
-            padding: 0.8rem 1.5rem;
-            border-radius: 50px;
-            background: linear-gradient(90deg, #6a11cb, #2575fc);
-            font-size: 1.1rem;
+            padding: 0.7rem 1.5rem;
+            border-radius: 30px;
+            background: #6c63ff;
+            font-size: 1rem;
             font-weight: 500;
-            transition: all 0.3s ease;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            transition: all 0.2s ease;
+            box-shadow: 0 4px 12px rgba(108, 99, 255, 0.2);
         }
 
         .faq a:hover {
-            transform: scale(1.1);
-            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
-            background: linear-gradient(90deg, #2575fc, #6a11cb);
+            background: #574bff;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 16px rgba(108, 99, 255, 0.3);
         }
     </style>
 </head>
@@ -112,7 +86,5 @@
             <li><a href="F&Qs.pdf" target="_blank">FAQs</a></li>
         </ul>
     </div>
-
-    
 </body>
 </html>
