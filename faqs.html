@@ -91,7 +91,7 @@
       transform: rotate(180deg);
     }
 
-    details p {
+    details p, details ul {
       padding: 0 1.2rem 1rem;
       line-height: 1.6;
       color: #555;
@@ -99,21 +99,13 @@
       text-align: left;
     }
 
-    ol, ul {
-      text-align: left;
-      padding-left: 2.5rem;
+    ul {
+      margin-top: 0.5rem;
+      padding-left: 1.5rem;
     }
 
     li {
-      margin: 0.5rem 0;
-    }
-
-    code {
-      background: #eef1ff;
-      padding: 2px 5px;
-      border-radius: 5px;
-      font-family: Consolas, monospace;
-      font-size: 0.9rem;
+      margin-bottom: 0.4rem;
     }
 
     .home-link {
@@ -146,106 +138,82 @@
 </head>
 <body>
   <header>
-    <h1>FAQs</h1>
-    <p>Frequently Asked Questions about Creating an FAQ Page</p>
+    <h1>FAQ Writing Procedure</h1>
+    <p>How to create clear, consistent, and helpful FAQ documents</p>
   </header>
 
   <main>
-    <h2>FAQ on FAQ Creation</h2>
-
-    <details>
-      <summary>What is an FAQ page?</summary>
-      <p>An FAQ page (Frequently Asked Questions) provides quick answers to common user questions. It helps reduce confusion and improve user experience.</p>
-    </details>
-
-    <details>
-      <summary>Why include FAQs in documentation?</summary>
-      <p>Including FAQs helps users troubleshoot or understand steps without reaching out for support. It keeps documentation more complete and accessible.</p>
-    </details>
-
-    <details>
-      <summary>How are these dropdowns made?</summary>
-      <p>They’re created using the HTML <code>&lt;details&gt;</code> and <code>&lt;summary&gt;</code> elements. No JavaScript is required — browsers handle the open/close behavior automatically.</p>
-    </details>
-
-    <details>
-      <summary>Can I customize how they look?</summary>
-      <p>Yes! You can modify the colors, font sizes, and icons in CSS to match your project’s design — just like this page uses Group 3’s layout and theme.</p>
-    </details>
+    <h2>Procedure for Writing an FAQ</h2>
 
     <details open>
-      <summary>Procedure: How to Create a FAQ Page</summary>
-      <p><strong>Objective:</strong> To outline the steps required to create a Frequently Asked Questions (FAQ) page that helps users find answers to common questions quickly and efficiently.</p>
-      
-      <ol>
-        <li><strong>Identify Common Questions</strong>
-          <ul>
-            <li>Review feedback, support tickets, and recurring issues.</li>
-            <li>List the most frequently asked or confusing topics.</li>
-            <li>Prioritize questions asked by multiple users.</li>
-          </ul>
-        </li>
+      <summary>Purpose</summary>
+      <p>This guide outlines a consistent process for creating FAQ (Frequently Asked Questions) documents. It ensures that all FAQs are clear, concise, and easy for readers to navigate.</p>
+    </details>
 
-        <li><strong>Draft Clear and Concise Answers</strong>
-          <ul>
-            <li>Write short, direct answers using simple language.</li>
-            <li>Avoid jargon and unnecessary technical terms.</li>
-            <li>Add links to related documentation if needed.</li>
-          </ul>
-        </li>
+    <details>
+      <summary>Step 1: Define the Goal</summary>
+      <ul>
+        <li>Determine what specific problem the FAQ will address.</li>
+        <li>Keep it focused — one FAQ should cover one main topic.</li>
+        <li>Write a short purpose statement explaining why this FAQ is needed.</li>
+      </ul>
+    </details>
 
-        <li><strong>Organize Questions by Category</strong>
-          <ul>
-            <li>Group similar topics together (e.g., Setup, Troubleshooting, Access).</li>
-            <li>Arrange questions in a logical order — from most to least common.</li>
-          </ul>
-        </li>
+    <details>
+      <summary>Step 2: Collect Key Questions</summary>
+      <ul>
+        <li>Gather questions commonly asked by users, teammates, or support staff.</li>
+        <li>Review emails, chat logs, or feedback forms for recurring issues.</li>
+        <li>Confirm answers with subject matter experts before writing.</li>
+      </ul>
+    </details>
 
-        <li><strong>Design the FAQ Layout</strong>
-          <ul>
-            <li>Use a consistent style that matches your documentation portal.</li>
-            <li>Include a header, main section, and footer.</li>
-          </ul>
-        </li>
+    <details>
+      <summary>Step 3: Write in a Clear and Simple Format</summary>
+      <ul>
+        <li>Use plain language that anyone can understand.</li>
+        <li>Phrase questions as users would ask them (“How do I...?”).</li>
+        <li>Keep answers short, direct, and actionable.</li>
+      </ul>
+    </details>
 
-        <li><strong>Add Dropdown Functionality</strong>
-          <p>Use the <code>&lt;details&gt;</code> and <code>&lt;summary&gt;</code> tags for each question:</p>
-          <pre><code>&lt;details&gt;
-  &lt;summary&gt;What does FAQ mean?&lt;/summary&gt;
-  &lt;p&gt;FAQ stands for Frequently Asked Questions.&lt;/p&gt;
-&lt;/details&gt;</code></pre>
-        </li>
+    <details>
+      <summary>Step 4: Structure the Document</summary>
+      <ul>
+        <li><strong>Title:</strong> Make it descriptive and easy to recognize.</li>
+        <li><strong>Purpose:</strong> Briefly explain what the FAQ covers.</li>
+        <li><strong>Questions:</strong> Organize from most common to least common.</li>
+        <li><strong>Procedures:</strong> Present actions in clear, numbered steps.</li>
+        <li><strong>Tips:</strong> Include references, cautions, or related links.</li>
+      </ul>
+    </details>
 
-        <li><strong>Style with CSS</strong>
-          <p>Apply fonts, colors, and spacing for a clean layout:</p>
-          <pre><code>details {
-  background: #fafbff;
-  border-radius: 12px;
-  margin: 1rem 0;
-  padding: 1rem;
-}</code></pre>
-        </li>
+    <details>
+      <summary>Step 5: Review and Test</summary>
+      <ul>
+        <li>Have a new reader test whether the FAQ is easy to follow.</li>
+        <li>Verify that the questions are answered accurately and clearly.</li>
+        <li>Edit for tone, consistency, and simplicity.</li>
+      </ul>
+    </details>
 
-        <li><strong>Test for Usability</strong>
-          <ul>
-            <li>Check your page in multiple browsers.</li>
-            <li>Ensure dropdowns work correctly and text is readable.</li>
-          </ul>
-        </li>
+    <details>
+      <summary>Step 6: Maintain and Update</summary>
+      <ul>
+        <li>Set a review schedule (quarterly or annually).</li>
+        <li>Update when new questions arise or processes change.</li>
+        <li>Add a date/version at the end of each document for tracking.</li>
+      </ul>
+    </details>
 
-        <li><strong>Publish and Maintain</strong>
-          <ul>
-            <li>Link the FAQ from your main documentation page.</li>
-            <li>Update regularly as new questions appear or answers change.</li>
-          </ul>
-        </li>
-      </ol>
-
-      <p><strong>Example Outcome:</strong> A clean, interactive FAQ page — like this one — that clearly explains key questions and steps.</p>
+    <details>
+      <summary>Example FAQ Entry</summary>
+      <p><strong>Q:</strong> How often should this FAQ be reviewed?<br>
+      <strong>A:</strong> At least once per quarter, or whenever the process changes or new questions appear.</p>
     </details>
 
     <div style="text-align:center;">
-      <a href="index.html" class="home-link">🏠 Back to Home</a>
+      <a href="index.html" class="home-link">Home</a>
     </div>
   </main>
 
