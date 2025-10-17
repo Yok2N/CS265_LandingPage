@@ -1,57 +1,173 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>FAQs</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FAQs - Group 3 Documentation</title>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
   <style>
     body {
       font-family: 'Poppins', sans-serif;
       margin: 0;
+      padding: 0;
       background: #f7f9fc;
-      display: flex;
-      flex-direction: column;
-      height: 100vh;
+      color: #333;
     }
 
     header {
+      text-align: center;
+      padding: 2rem 1rem 1rem;
+    }
+
+    header h1 {
+      font-size: 2rem;
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+      color: #4a4a4a;
+    }
+
+    header p {
+      color: #777;
+      font-size: 1rem;
+    }
+
+    main {
+      margin: 2rem auto;
+      padding: 2rem;
+      width: 90%;
+      max-width: 700px;
+      background: #ffffff;
+      border-radius: 20px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+    }
+
+    h2 {
+      text-align: center;
+      color: #555;
+      font-size: 1.6rem;
+      font-weight: 600;
+      margin-bottom: 1.5rem;
+    }
+
+    details {
+      border: 1px solid #e0e0e0;
+      border-radius: 12px;
+      margin-bottom: 1rem;
+      background: #fafbff;
+      transition: all 0.2s ease-in-out;
+      box-shadow: 0 2px 6px rgba(108, 99, 255, 0.08);
+    }
+
+    details[open] {
+      background: #f0f1ff;
+      box-shadow: 0 4px 12px rgba(108, 99, 255, 0.15);
+    }
+
+    summary {
+      cursor: pointer;
+      padding: 1rem 1.2rem;
+      font-weight: 600;
+      color: #4a4a4a;
+      font-size: 1.05rem;
+      list-style: none;
+      position: relative;
+    }
+
+    summary::marker {
+      display: none;
+    }
+
+    summary::after {
+      content: "➕";
+      position: absolute;
+      right: 1.2rem;
+      color: #6c63ff;
+      font-weight: bold;
+      transition: transform 0.2s ease;
+    }
+
+    details[open] summary::after {
+      content: "➖";
+      transform: rotate(180deg);
+    }
+
+    details p {
+      padding: 0 1.2rem 1rem;
+      line-height: 1.6;
+      color: #555;
+      font-size: 0.95rem;
+      text-align: left;
+    }
+
+    .home-link {
+      display: inline-block;
+      margin: 2rem auto 0;
+      text-decoration: none;
+      color: #fff;
       background: #6c63ff;
-      color: white;
-      padding: 1rem;
+      padding: 0.7rem 1.5rem;
+      border-radius: 30px;
+      font-weight: 500;
+      transition: all 0.2s ease;
+      box-shadow: 0 4px 12px rgba(108, 99, 255, 0.2);
       text-align: center;
     }
 
-    header a {
-      display: inline-block;
-      text-decoration: none;
-      color: #6c63ff;
-      background: white;
-      padding: 0.5rem 1rem;
-      border-radius: 20px;
-      font-weight: 600;
-      transition: all 0.2s ease;
-      margin-top: 0.5rem;
-    }
-
-    header a:hover {
-      background: #ddd;
+    .home-link:hover {
+      background: #574bff;
       transform: translateY(-2px);
+      box-shadow: 0 6px 16px rgba(108, 99, 255, 0.3);
     }
 
-    iframe {
-      flex: 1;
-      width: 100%;
-      border: none;
+    footer {
+      text-align: center;
+      padding: 1.5rem;
+      color: #777;
+      font-size: 0.9rem;
     }
   </style>
 </head>
 <body>
   <header>
-    <h2>Frequently Asked Questions</h2>
-    <a href="index.html">Home</a>
+    <h1>FAQs</h1>
+    <p>Frequently Asked Questions about Our Documentation</p>
   </header>
 
-  <iframe src="F&Qs.pdf"></iframe>
+  <main>
+    <h2>FAQ on FAQ</h2>
+
+    <details>
+      <summary>What is an FAQ page?</summary>
+      <p>An FAQ page (Frequently Asked Questions) provides quick answers to common user questions. It helps reduce confusion and improve user experience.</p>
+    </details>
+
+    <details>
+      <summary>Why include FAQs in documentation?</summary>
+      <p>Including FAQs helps users troubleshoot or understand steps without reaching out for support. It keeps documentation more complete and accessible.</p>
+    </details>
+
+    <details>
+      <summary>How are these dropdowns made?</summary>
+      <p>They’re created using the HTML <code>&lt;details&gt;</code> and <code>&lt;summary&gt;</code> elements. No JavaScript is required — browsers handle the open/close behavior automatically.</p>
+    </details>
+
+    <details>
+      <summary>Can I customize how they look?</summary>
+      <p>Yes! You can modify the colors, font sizes, and icons in CSS to match your project’s style — like this page does with Group 3’s design.</p>
+    </details>
+
+    <details>
+      <summary>Where can I find more documentation?</summary>
+      <p>You can return to the main documentation hub using the button below, where you’ll find all procedure pages listed by Group 3.</p>
+    </details>
+
+    <div style="text-align:center;">
+      <a href="index.html" class="home-link">🏠 Back to Home</a>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Group 3 | Documentation Portal</p>
+  </footer>
 </body>
 </html>
